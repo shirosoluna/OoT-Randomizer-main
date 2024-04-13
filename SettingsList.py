@@ -3204,6 +3204,7 @@ class SettingInfos:
             'randomize_key': 'randomize_settings',
         },
     )
+<<<<<<< HEAD
 
     shuffle_dungeon_rewards = Combobox(
         gui_text       = 'Shuffle Dungeon Rewards',
@@ -3716,6 +3717,8 @@ class SettingInfos:
         shared          = True,
     )
 
+=======
+>>>>>>> 098f598d (Bronze scale)
     # Detailed Logic (except "Guarantee Reachable Locations")
 
     logic_no_night_tokens_without_suns_song = Checkbutton(

@@ -110,7 +110,11 @@
             "Deku Tree Basement Recovery Heart 3": "can_swim or can_use(Iron_Boots)"
         },
         "exits": {
+<<<<<<< HEAD
             "Deku Tree Basement Ledge": "deku_tree_shortcuts and (can_swim or can_use(Iron_Boots)",
+=======
+            "Deku Tree Basement Ledge": "deku_tree_shortcuts and (can_swim or can_use(Iron_Boots))",
+>>>>>>> 098f598d (Bronze scale)
             "Queen Gohma Boss Room": "at('Deku Tree Lobby',is_adult and glitch_deku_boss_door_skip) or
                 (
                 deku_tree_shortcuts or (here(has_shield or

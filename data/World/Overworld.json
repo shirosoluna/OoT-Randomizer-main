@@ -551,7 +551,11 @@
             # The seemingly redundant `plant_beans` check is to allow supplementary searches, which can't collect events, to use this path.
             "LH Fishing Island": "
                 (is_child and can_swim) or can_use(Scarecrow) or
+<<<<<<< HEAD
                 here(can_plant_bean) or plant_beans or 'Water Temple Clear'",
+=======
+                here(can_plant_bean) or plant_beans or ('Water Temple Clear' and can_swim)",
+>>>>>>> 098f598d (Bronze scale)
             "Water Temple Lobby": "
                 is_adult and Hookshot and
                 (Iron_Boots or ((Longshot or logic_water_hookshot_entry) and (Progressive_Scale, 3)))",
@@ -587,7 +591,11 @@
             "LH Trade Eyeball Frog": "'Eyedrops Access'",
             "LH Lab Dive": "
                 (Progressive_Scale, 3) or
+<<<<<<< HEAD
                 (logic_lab_diving and is_adult and Iron_Boots and Hookshot)",
+=======
+                (logic_lab_diving and is_adult and Iron_Boots and Hookshot and can_swim)",
+>>>>>>> 098f598d (Bronze scale)
             "LH Lab Dive Red Rupee 1": "(Progressive_Scale, 3) or can_use(Iron_Boots)",
             "LH Lab Dive Red Rupee 2": "(Progressive_Scale, 3) or can_use(Iron_Boots)",
             "LH Lab Dive Red Rupee 3": "(Progressive_Scale, 3) or can_use(Iron_Boots)",
@@ -639,7 +647,11 @@
         "hint": "GERUDO_VALLEY",
         "time_passes": true,
         "locations": {
+<<<<<<< HEAD
             "GV Waterfall Freestanding PoH": "is_child or can_swim",
+=======
+            "GV Waterfall Freestanding PoH": "is_child or can_swim or (can_use(Iron_Boots) and can_use(Longshot))",
+>>>>>>> 098f598d (Bronze scale)
             "GV GS Bean Patch": "can_plant_bugs and can_child_attack",
             "GV Cow": "is_child and can_play(Eponas_Song)",
             "GV Crate Near Cow": "is_child and can_break_crate",

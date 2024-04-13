@@ -48,6 +48,7 @@
     },
     {
         "region_name": "Deku Tree Basement Eye Switch Room",
+<<<<<<< HEAD
         "dungeon": "Deku Tree",
         "locations": {
         },
@@ -76,6 +77,36 @@
         "region_name": "Deku Tree Basement Back Room",
         "dungeon": "Deku Tree",
         "exits": {
+=======
+        "dungeon": "Deku Tree",
+        "locations": {
+        },
+        "exits": {
+            "Deku Tree Basement Spinning Log Room": "here(can_use(Bow) or can_use(Slingshot))"
+        }
+    },
+    {
+        "region_name": "Deku Tree Basement Spinning Log Room",
+        "dungeon": "Deku Tree",
+        "exits":
+        {
+            "Deku Tree Basement Torch Room": "can_swim or can_use(Iron_boots)"
+        }
+    },
+    {
+        "region_name": "Deku Tree Basement Torch Room",
+        "dungeon": "Deku Tree",
+        "exits":
+        {
+            "Deku Tree Basement Back Room": "has_fire_source_with_torch",
+            "Deku Tree Basement Spinning Log Room": "has_fire_source_with_torch"
+        }
+    },
+    {
+        "region_name": "Deku Tree Basement Back Room",
+        "dungeon": "Deku Tree",
+        "exits": {
+>>>>>>> 098f598d (Bronze scale)
             "Deku Tree Basement Back Side Room": "
                 here(has_fire_source_with_torch or can_use(Bow))",
             "Deku Tree Basement Ledge": "is_child",
@@ -96,8 +127,13 @@
             "Deku Tree Basement": "True",
             "Deku Tree Basement Back Room": "is_child",
             "Deku Tree Before Boss": "
+<<<<<<< HEAD
                (is_adult or can_swim) and deku_tree_shortcuts or
                 here(has_fire_source_with_torch or (logic_deku_b1_webs_with_bow and can_use(Bow)))"
+=======
+               can_jumpslash and (deku_tree_shortcuts or
+                here(has_fire_source_with_torch or (logic_deku_b1_webs_with_bow and can_use(Bow))))"
+>>>>>>> 098f598d (Bronze scale)
         }
     },
     {

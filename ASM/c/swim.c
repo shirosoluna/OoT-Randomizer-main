@@ -13,12 +13,21 @@ RespawnByScene respawnsByScene[] = {
     { 0x10E, { { -1500, 150, 1600 }, 32768}},       // Sapphire cutscene to Zora Fountain
     { 0x1A5, { { -224, -51, -117 }, 16384}},        // Caught by Gerudos as child
     { 0x199, { { 4129, 920, -1384 }, 49152}},       // Zora River from top of waterfall
+<<<<<<< HEAD
 };
 
 void set_new_respawn() {
     bool newRespawnTrue = false;
     int32_t currentEntranceIndex = z64_game.entrance_index;
     for (uint8_t i = 0; i < 12; i++) {
+=======
+    { 0x1FD, { { 0, 0, 1200 }, 0}},                 // Hyrule Field from Market
+};
+
+void set_new_respawn() {
+    int32_t currentEntranceIndex = z64_game.entrance_index;
+    for (uint8_t i = 0; i < 13; i++) {
+>>>>>>> 098f598d (Bronze scale)
         // Ensure we always respawn at a safe location.
         if (currentEntranceIndex == respawnsByScene[i].scene_index) {
             z64_Play_SetupRespawnPoint(&z64_game, 0x01, 0xDFF);
@@ -26,8 +35,12 @@ void set_new_respawn() {
             z64_file.respawn[RESPAWN_MODE_RETURN].yaw = respawnsByScene[i].respawnInfo.yaw;
             z64_file.respawn_flag = 2;
             z64_game.scene_load_flag = 0x14;
+<<<<<<< HEAD
             newRespawnTrue = true;
             break;
+=======
+            return;
+>>>>>>> 098f598d (Bronze scale)
         }
     }
 
@@ -53,12 +66,31 @@ void set_new_respawn() {
         return;
     }
 
+<<<<<<< HEAD
     if (newRespawnTrue) {
         z64_game.entrance_index = z64_file.entrance_index;
         z64_game.fadeout_transition = 0x02;
         z64_file.respawn_flag = -2;
         z64_game.scene_load_flag = 0x14;
     }
+=======
+    // Zoras river near waterfall, to have mercy if jumping for the rupees as adult.
+    if (z64_game.scene_index == 84 && z64_link.common.pos_world.x > 3800) {
+        z64_Play_SetupRespawnPoint(&z64_game, 0x01, 0xDFF);
+        z64_xyzf_t riverPos = { 4129, 920, -1384 };
+        z64_file.respawn[RESPAWN_MODE_RETURN].pos = riverPos;
+        z64_file.respawn[RESPAWN_MODE_RETURN].yaw = 49152;
+        z64_file.respawn_flag = 2;
+        z64_game.scene_load_flag = 0x14;
+        return;
+    }
+
+    // Normal case, just respawn at the last entrance.
+    z64_game.entrance_index = z64_file.entrance_index;
+    z64_game.fadeout_transition = 0x02;
+    z64_file.respawn_flag = -2;
+    z64_game.scene_load_flag = 0x14;
+>>>>>>> 098f598d (Bronze scale)
 }
 
 void manage_swim() {

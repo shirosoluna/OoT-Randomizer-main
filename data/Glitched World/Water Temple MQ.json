@@ -147,7 +147,11 @@
             "Water Temple Lobby": "Reset_Water_Level",
             "Water Temple Storage Room": "can_use(Hookshot)",
             "Water Temple Middle South": "True",
+<<<<<<< HEAD
             "Water Temple Below Central Pillar": "is_adult and glitch_ledge_clip and can_swim
+=======
+            "Water Temple Below Central Pillar": "is_adult and glitch_ledge_clip and can_swim and
+>>>>>>> 098f598d (Bronze scale)
                 ((has_explosives and can_shield) or Megaton_Hammer)",
             "Water Temple Middle West": "can_use(Hookshot)",
             "Water Temple Bottom Gates Switch": "can_weirdshot"

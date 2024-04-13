@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "PAYLOAD_END": 2152282672,
 =======
     "PAYLOAD_END": 2152282032,
@@ -24,6 +25,9 @@
 =======
     "PAYLOAD_END": 2152250992,
 >>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
+=======
+    "PAYLOAD_END": 2152285040,
+>>>>>>> 098f598d (Bronze scale)
     "PLAYER_ACTOR": 2149427760,
     "PLAYER_WALK_RUN": 2151254976,
     "SAVE_CONTEXT": 2148640208,
