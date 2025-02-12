@@ -2236,6 +2236,9 @@ class SettingInfos:
         gui_params     = {
             'randomize_key': 'randomize_settings',
         },
+        disable        = {
+            '!off': {'settings': ['fast_tokens']}
+        }
     )
 
     shuffle_scrubs = Combobox(
@@ -3480,6 +3483,19 @@ class SettingInfos:
         shared         = True,
     )
 
+    fast_tokens = Checkbutton(
+        gui_text       = 'Fast Token Pickups',
+        gui_tooltip    = '''\
+            Picking up tokens will not freeze the world.
+        ''',
+        default        = True,
+        gui_params     = {
+            "hide_when_disabled": True,
+        },
+        disabled_default = False,
+        shared         = True,
+    )
+
     free_scarecrow = Checkbutton(
         gui_text       = "Free Scarecrow's Song",
         gui_tooltip    = '''\
@@ -3713,7 +3729,7 @@ class SettingInfos:
         gui_params       = {
             "size"               : "full",
             "hide_when_disabled" : True,
-        },
+        }
     )
 
     item_hints = SettingInfoList(
