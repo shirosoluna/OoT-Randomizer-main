@@ -375,8 +375,8 @@ item_table: dict[str, tuple[str, Optional[bool], Optional[int], Optional[dict[st
     'Hylian Shield':                                   ('Item',     None,  GetItemId.GI_SHIELD_HYLIAN, {'market_price': 80}),
 >>>>>>> 33c241d2 (Generate fewer refill special deals above market price)
     'Mirror Shield':                                   ('Item',     True,  GetItemId.GI_SHIELD_MIRROR, None),
-    'Goron Tunic':                                     ('Item',     True,  GetItemId.GI_TUNIC_GORON, {'market_price': 200}),
-    'Zora Tunic':                                      ('Item',     True,  GetItemId.GI_TUNIC_ZORA, {'market_price': 300}),
+    'Goron Tunic':                                     ('Item',     True,  GetItemId.GI_TUNIC_GORON, None),
+    'Zora Tunic':                                      ('Item',     True,  GetItemId.GI_TUNIC_ZORA, None),
     'Iron Boots':                                      ('Item',     True,  GetItemId.GI_BOOTS_IRON, None),
     'Hover Boots':                                     ('Item',     True,  GetItemId.GI_BOOTS_HOVER, None),
     'Stone of Agony':                                  ('Item',     True,  GetItemId.GI_STONE_OF_AGONY, None),
