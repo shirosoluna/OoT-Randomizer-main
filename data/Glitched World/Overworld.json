@@ -3063,7 +3063,7 @@
         "exits": {
             "ZR Behind Waterfall": "True",
             "Lake Hylia": "(is_child and (can_dive or can_js_clip or 
-                (glitch_zd_child_oob and can_live_dmg(0.5,False,False) and has_bombchus and can_shield and can_live_dmg(1.5) )
+                (glitch_zd_child_oob and can_live_dmg(0.5,False,False) and has_bombchus and can_shield and can_live_dmg(1.5) ) or
                 (glitch_zd_zf_burning_stick and Sticks and can_live_dmg(1.0))
                 )) or 
                 (is_adult and can_js_clip and can_live_dmg(1.0))",
