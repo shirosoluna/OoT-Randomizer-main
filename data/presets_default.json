@@ -2687,7 +2687,7 @@
         "ice_trap_appearance":                     "junk_only",
         "shuffle_boulders": false,
         "shuffle_grass": false,
-        "shuffle_gossipstones": false,
-        "shuffle_fishies": false
+        "shuffle_gossipstones": false
+       
     }
 }

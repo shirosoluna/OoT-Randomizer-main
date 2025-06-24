@@ -1778,7 +1778,9 @@ logic_tricks: dict[str, dict[str, str | tuple[str, ...]]] = {
 }
 
 advanced_logic_tricks: dict[str, dict[str, str | tuple[str, ...]]] = {
-
+    #   Advanced glitchless tricks will be first, followed by General Glitch Tricks and then Dungeon tricks
+    #   For glitches with multiple trick variants, refer to tooltip description
+    
     '(Glitch) Infinite Sword Glitch (ISG)': {
         'name'    : 'glitch_isg',
         'tags'    : ("Glitch","Child", "Adult",),
