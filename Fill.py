@@ -155,15 +155,15 @@ def distribute_items_restrictive(worlds: list[World], fill_locations: Optional[l
             fill_locations.remove(location)
 
         # We need to check both settings now as they are separate and handle each case respectively.
-        non_empty_map_setting = worlds[0].settings.shuffle_map in ['any_dungeon', 'overworld', 'keysanity', 'regional']
-        non_empty_compass_setting = worlds[0].settings.shuffle_compass in ['any_dungeon', 'overworld', 'keysanity', 'regional']
+        non_empty_map_setting = worlds[0].settings.shuffle_map in ('any_dungeon', 'overworld', 'keysanity', 'regional')
+        non_empty_compass_setting = worlds[0].settings.shuffle_compass in ('any_dungeon', 'overworld', 'keysanity', 'regional')
         if non_empty_map_setting or non_empty_compass_setting:
             # Non-empty dungeon items are present in restitempool but yet we
             # don't want to place them in an empty dungeon
             restdungeon, restother = [], []
             for item in restitempool:
                 if item.dungeonitem:
-                    if not non_empty_map_setting and item.map or not non_empty_compass_setting and item.compass:
+                    if (not non_empty_map_setting and item.map) or (not non_empty_compass_setting and item.compass):
                         restother.append(item)
                     else:
                         restdungeon.append(item)

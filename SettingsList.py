@@ -2706,19 +2706,19 @@ class SettingInfos:
     )
 
     shuffle_compass = Combobox(
-        gui_text='Compasses',
-        default='dungeon',
-        choices={
-            'remove': 'Remove',
-            'startwith': 'Start With',
-            'vanilla': 'Vanilla Locations',
-            'dungeon': 'Own Dungeon',
-            'regional': 'Regional',
-            'overworld': 'Overworld Only',
+        gui_text       = 'Compasses',
+        default        = 'dungeon',
+        choices        = {
+            'remove':      'Remove',
+            'startwith':   'Start With',
+            'vanilla':     'Vanilla Locations',
+            'dungeon':     'Own Dungeon',
+            'regional':    'Regional',
+            'overworld':   'Overworld Only',
             'any_dungeon': 'Any Dungeon',
-            'keysanity': 'Anywhere',
+            'keysanity':   'Anywhere',
         },
-        gui_tooltip='''\
+        gui_tooltip    = '''\
                 'Remove': Compasses are removed.
                 This will add a small amount of money and refill items to the pool.
 
@@ -2747,9 +2747,9 @@ class SettingInfos:
                 Regardless of the selected option, compasses from pre-completed
                 dungeons won't be placed outside their respective dungeons and
                 compasses from other dungeons won't be placed inside pre-completed dungeons.
-            ''',
-        shared=True,
-        gui_params={
+        ''',
+        shared         = True,
+        gui_params     = {
             'randomize_key': 'randomize_settings',
         },
     )
