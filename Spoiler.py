@@ -328,7 +328,7 @@ class Copier:
             self.worlds[id(world)] = world.copy()
             for dungeon in world.dungeons:
                 self.dungeons[id(dungeon)] = dungeon.copy()
-                for item in chain(dungeon.boss_key, dungeon.small_keys, dungeon.dungeon_maps, dungeon.dungeon_compasses, dungeon.silver_rupees, dungeon.reward):
+                for item in chain(dungeon.boss_key, dungeon.small_keys, dungeon.maps, dungeon.compasses, dungeon.silver_rupees, dungeon.reward):
                     if id(item) in self.items:
                         continue
                     self.items[id(item)] = item.copy()
@@ -360,8 +360,8 @@ class Copier:
             dungeon.regions = [self.regions.get(id(region), region) for region in dungeon.regions]
             dungeon.boss_key = [self.items.get(id(item), item) for item in dungeon.boss_key]
             dungeon.small_keys = [self.items.get(id(item), item) for item in dungeon.small_keys]
-            dungeon.dungeon_maps = [self.items.get(id(item), item) for item in dungeon.dungeon_maps]
-            dungeon.dungeon_compasses = [self.items.get(id(item), item) for item in dungeon.dungeon_compasses]
+            dungeon.maps = [self.items.get(id(item), item) for item in dungeon.maps]
+            dungeon.compasses = [self.items.get(id(item), item) for item in dungeon.compasses]
             dungeon.silver_rupees = [self.items.get(id(item), item) for item in dungeon.silver_rupees]
             dungeon.reward = [self.items.get(id(item), item) for item in dungeon.reward]
 

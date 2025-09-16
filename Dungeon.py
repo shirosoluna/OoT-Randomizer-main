@@ -17,8 +17,8 @@ class Dungeon:
         self.regions: list[Region] = regions if regions is not None else []
         self.boss_key: list[Item] = []
         self.small_keys: list[Item] = []
-        self.dungeon_maps: list[Item] = []
-        self.dungeon_compasses: list[Item] = []
+        self.maps: list[Item] = []
+        self.compasses: list[Item] = []
         self.silver_rupees: list[Item] = []
         self.reward: list[Item] = []
 
@@ -35,8 +35,8 @@ class Dungeon:
         new_dungeon.regions = [region for region in self.regions]
         new_dungeon.boss_key = [item for item in self.boss_key]
         new_dungeon.small_keys = [item for item in self.small_keys]
-        new_dungeon.dungeon_maps = [item for item in self.dungeon_maps]
-        new_dungeon.dungeon_compasses = [item for item in self.dungeon_compasses]
+        new_dungeon.maps = [item for item in self.maps]
+        new_dungeon.compasses = [item for item in self.compasses]
         new_dungeon.silver_rupees = [item for item in self.silver_rupees]
         new_dungeon.reward = [item for item in self.reward]
 
@@ -82,7 +82,7 @@ class Dungeon:
 
     @property
     def all_items(self) -> list[Item]:
-        return self.dungeon_maps + self.dungeon_compasses + self.keys + self.silver_rupees + self.reward
+        return self.maps + self.compasses + self.keys + self.silver_rupees + self.reward
 
     @property
     def vanilla_boss_name(self) -> Optional[str]:
@@ -119,9 +119,9 @@ class Dungeon:
 
     def get_restricted_dungeon_items(self) -> Iterator[Item]:
         if self.shuffle_map == 'dungeon' or (self.precompleted and self.shuffle_map in ('any_dungeon', 'overworld', 'keysanity', 'regional')):
-            yield from self.dungeon_maps
+            yield from self.maps
         if self.shuffle_compass == 'dungeon' or (self.precompleted and self.shuffle_compass in ('any_dungeon', 'overworld', 'keysanity', 'regional')):
-            yield from self.dungeon_compasses
+            yield from self.compasses
         if self.shuffle_smallkeys == 'dungeon' or (self.precompleted and self.shuffle_smallkeys in ('any_dungeon', 'overworld', 'keysanity', 'regional')):
             yield from self.small_keys
         if self.shuffle_bosskeys == 'dungeon' or (self.precompleted and self.shuffle_bosskeys in ('any_dungeon', 'overworld', 'keysanity', 'regional')):
@@ -136,9 +136,9 @@ class Dungeon:
         if self.precompleted:
             return
         if self.shuffle_map in ('any_dungeon', 'overworld', 'keysanity', 'regional'):
-            yield from self.dungeon_maps
+            yield from self.maps
         if self.shuffle_compass in ('any_dungeon', 'overworld', 'keysanity', 'regional'):
-            yield from self.dungeon_compasses
+            yield from self.compasses
         if self.shuffle_smallkeys in ('any_dungeon', 'overworld', 'keysanity', 'regional'):
             yield from self.small_keys
         if self.shuffle_bosskeys in ('any_dungeon', 'overworld', 'keysanity', 'regional'):

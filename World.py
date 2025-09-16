@@ -671,10 +671,10 @@ class World:
                 shuffle_setting = None
                 dungeon_collection = None
                 if item.map:
-                    dungeon_collection = dungeon.dungeon_maps
+                    dungeon_collection = dungeon.maps
                     shuffle_setting = self.settings.shuffle_map
                 elif item.compass:
-                    dungeon_collection = dungeon.dungeon_compasses
+                    dungeon_collection = dungeon.compasses
                     shuffle_setting = self.settings.shuffle_compass
                 elif item.smallkey:
                     dungeon_collection = dungeon.small_keys
