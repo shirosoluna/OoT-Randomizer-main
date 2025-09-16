@@ -1015,10 +1015,12 @@ def patch_rom(spoiler: Spoiler, world: World, rom: Rom) -> Rom:
     rom.write_int16s(0x21BD62C, new_gate_opening_guard)  # Adult Night
 
     # start with maps/compasses
-    if world.settings.shuffle_mapcompass == 'startwith':
+    if world.settings.shuffle_map == 'startwith':
+        for dungeon in ('deku', 'dodongo', 'jabu', 'forest', 'fire', 'water', 'spirit', 'shadow', 'botw', 'ice'):
+            save_context.addresses['dungeon_items'][dungeon]['map'].value = True
+    if world.settings.shuffle_compass == 'startwith':
         for dungeon in ('deku', 'dodongo', 'jabu', 'forest', 'fire', 'water', 'spirit', 'shadow', 'botw', 'ice'):
             save_context.addresses['dungeon_items'][dungeon]['compass'].value = True
-            save_context.addresses['dungeon_items'][dungeon]['map'].value = True
 
     # start with silver rupees
     if world.settings.shuffle_silver_rupees == 'remove':
@@ -1788,7 +1790,56 @@ def patch_rom(spoiler: Spoiler, world: World, rom: Rom) -> Rom:
 
     # give dungeon items the correct messages
     add_item_messages(messages, shop_items, world)
+<<<<<<< HEAD
     update_map_compass_messages(messages, world)
+=======
+    maps_exist = world.settings.shuffle_map != 'remove'
+    compasses_exist = world.settings.shuffle_compass != 'remove'
+    if world.settings.enhance_map_compass and (maps_exist or compasses_exist) and world.settings.world_count == 1:
+        dungeon_list = {
+            #                      dungeon name                      compass map
+            'Deku Tree':          ("the \x05\x42Deku Tree",          0x62, 0x88),
+            'Dodongos Cavern':    ("\x05\x41Dodongo\'s Cavern",      0x63, 0x89),
+            'Jabu Jabus Belly':   ("\x05\x43Jabu Jabu\'s Belly",     0x64, 0x8a),
+            'Forest Temple':      ("the \x05\x42Forest Temple",      0x65, 0x8b),
+            'Fire Temple':        ("the \x05\x41Fire Temple",        0x7c, 0x8c),
+            'Water Temple':       ("the \x05\x43Water Temple",       0x7d, 0x8e),
+            'Spirit Temple':      ("the \x05\x46Spirit Temple",      0x7e, 0x8f),
+            'Ice Cavern':         ("the \x05\x44Ice Cavern",         0x87, 0x92),
+            'Bottom of the Well': ("the \x05\x45Bottom of the Well", 0xa2, 0xa5),
+            'Shadow Temple':      ("the \x05\x45Shadow Temple",      0x7f, 0xa3),
+        }
+        for dungeon in world.dungeons:
+            if dungeon.name in ('Gerudo Training Ground', 'Ganons Castle'):
+                pass
+            elif dungeon.name in ('Bottom of the Well', 'Ice Cavern') and maps_exist:
+                dungeon_name, compass_id, map_id = dungeon_list[dungeon.name]
+                map_message = f"\x13\x76\x08You found the \x05\x41Dungeon Map\x05\x40\x01for {dungeon_name}\x05\x40!\x01It\'s {'masterful' if world.dungeon_mq[dungeon.name] else 'ordinary'}!\x09"
+
+                if world.settings.mq_dungeons_mode == 'random' or world.settings.mq_dungeons_count != 0 and world.settings.mq_dungeons_count != 12:
+                    update_message_by_id(messages, map_id, map_message, allow_duplicates=True)
+            else:
+                dungeon_name, compass_id, map_id = dungeon_list[dungeon.name]
+                if compasses_exist:
+                    if world.entrance_rando_reward_hints:
+                        vanilla_reward = world.get_location(dungeon.vanilla_boss_name).vanilla_item
+                        vanilla_reward_location = world.hinted_dungeon_reward_locations[vanilla_reward]
+                        if vanilla_reward_location is None:
+                            area = HintArea.ROOT
+                        else:
+                            area = HintArea.at(vanilla_reward_location)
+                        area = GossipText(area.text(world.settings.clearer_hints, preposition=True, use_2nd_person=True), [area.color], prefix='', capitalize=False)
+                        compass_message = f"\x13\x75\x08You found the \x05\x41Compass\x05\x40\x01for {dungeon_name}\x05\x40!\x01The {vanilla_reward} can be found\x01{area}!\x09"
+                    else:
+                        boss_location = next(filter(lambda loc: loc.type == 'Boss', world.get_entrance(f'{dungeon} Before Boss -> {dungeon.vanilla_boss_name} Boss Room').connected_region.locations))
+                        dungeon_reward = boss_location.item.name
+                        compass_message = f"\x13\x75\x08You found the \x05\x41Compass\x05\x40\x01for {dungeon_name}\x05\x40!\x01It holds the \x05{COLOR_MAP[REWARD_COLORS[dungeon_reward]]}{dungeon_reward}\x05\x40!\x09"
+                if world.settings.shuffle_dungeon_rewards != 'dungeon' and compasses_exist:
+                    update_message_by_id(messages, compass_id, compass_message, allow_duplicates=True)
+                if world.settings.mq_dungeons_mode == 'random' or world.settings.mq_dungeons_count != 0 and world.settings.mq_dungeons_count != 12 and maps_exist:
+                    map_message = f"\x13\x76\x08You found the \x05\x41Dungeon Map\x05\x40\x01for {dungeon_name}\x05\x40!\x01It\'s {'masterful' if world.dungeon_mq[dungeon.name] else 'ordinary'}!\x09"
+                    update_message_by_id(messages, map_id, map_message, allow_duplicates=True)
+>>>>>>> 5a7aa13e ([#954] Made it so maps and compasses have their own individual shuffle settings.)
 
     # Set hints on the altar inside ToT
     rom.write_int16(0xE2ADB2, 0x707A)
