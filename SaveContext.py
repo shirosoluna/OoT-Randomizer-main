@@ -1697,7 +1697,7 @@ def write_settings_dependent_save_context_flags(save_context: SaveContext, world
         save_context.write_permanent_flag(Scenes.DEATH_MOUNTAIN_TRAIL, FlagType.SWITCH, 0x3, 0x40)  # Plant Death Mountain Trail bean
         save_context.write_permanent_flag(Scenes.DEATH_MOUNTAIN_CRATER, FlagType.SWITCH, 0x3, 0x08)  # Plant Death Mountain Crater bean
 
-    if world.settings.skip_reward_from_rauru:
+    if world.settings.skip_reward_from_rauru == 'free' or world.settings.skip_reward_from_rauru == 'free_forced':
         save_context.write_bits(0x0EDD, 0x20)  # "Pulled Master Sword from Pedestal"
 
     if world.settings.ruto_already_f1_jabu and not world.dungeon_mq['Jabu Jabus Belly']:

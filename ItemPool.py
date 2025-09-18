@@ -552,6 +552,7 @@ def get_pool_core(world: World) -> tuple[list[str], dict[str, Item]]:
 
     # Use the vanilla items in the world's locations when appropriate.
     vanilla_items_processed = Counter()
+    rauru_random_location = None
     for location in world.get_locations():
         if location.vanilla_item is None:
             continue
@@ -813,11 +814,21 @@ def get_pool_core(world: World) -> tuple[list[str], dict[str, Item]]:
             if world.settings.shuffle_dungeon_rewards in ('vanilla', 'reward'):
                 pass # handled in World.fill_bosses
             else:
-                shuffle_item = True
+                if world.settings.skip_reward_from_rauru != 'free_forced':
+                    shuffle_item = True
+                else:
+                    possible_reward_locations = ["ToT Reward from Rauru", "Queen Gohma", "King Dodongo", "Barinade", 
+                                                  "Phantom Ganon", "Volvagia", "Morpha", "Bongo Bongo", "Twinrova"]
+                    rauru_random_location: str = random.choice(possible_reward_locations)
+                    item = world.get_location(rauru_random_location).vanilla_item
+                    shuffle_item = False
         elif location.type == 'Boss':
             if world.settings.shuffle_dungeon_rewards in ('vanilla', 'reward'):
                 pass # handled in World.fill_bosses
             elif world.settings.shuffle_dungeon_rewards in ('any_dungeon', 'overworld', 'regional', 'anywhere'):
+                # We swap with the dungeon reward that rauru became if it is a guaranteed dungeon reward then shuffle like usual
+                if rauru_random_location == location.name:
+                    item = world.get_location('ToT Reward from Rauru').vanilla_item
                 shuffle_item = True
             else:
                 dungeon = Dungeon.from_vanilla_reward(ItemFactory(location.vanilla_item, world))
