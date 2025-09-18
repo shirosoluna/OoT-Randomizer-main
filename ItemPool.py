@@ -821,12 +821,15 @@ def get_pool_core(world: World) -> tuple[list[str], dict[str, Item]]:
                 if world.settings.skip_reward_from_rauru != 'free_forced':
                     shuffle_item = True
                 else:
-                    if world.settings.shuffle_dungeon_rewards in ('any_dungeon', 'overworld', 'regional', 'anywhere'):
+                    if world.settings.shuffle_dungeon_rewards in ('any_dungeon', 'overworld', 'anywhere'):
                         # Rauru is currently considered a "Boss" by location, may need to change this in the future.
                         boss_locations = location_groups['Boss']
                         rauru_random_location: str = random.choice(boss_locations)
                         item = world.get_location(rauru_random_location).vanilla_item
-                    shuffle_item = False
+                        world.push_item(location, ItemFactory(item, world))
+                    else:
+                        item = location.vanilla_item
+                        world.push_item(location, ItemFactory(item, world))
         elif location.type == 'Boss':
             if world.settings.shuffle_dungeon_rewards in ('vanilla', 'reward'):
                 pass # handled in World.fill_bosses
