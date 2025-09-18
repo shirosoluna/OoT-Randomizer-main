@@ -818,7 +818,7 @@ def get_pool_core(world: World) -> tuple[list[str], dict[str, Item]]:
                     shuffle_item = True
                 else:
                     if world.settings.shuffle_dungeon_rewards in ('any_dungeon', 'overworld', 'regional', 'anywhere'):
-                        possible_reward_locations = ["ToT Reward from Rauru", "Queen Gohma", "King Dodongo", "Barinade", 
+                        possible_reward_locations = ["ToT Reward from Rauru", "Queen Gohma", "King Dodongo", "Barinade",
                                                       "Phantom Ganon", "Volvagia", "Morpha", "Bongo Bongo", "Twinrova"]
                         rauru_random_location: str = random.choice(possible_reward_locations)
                         item = world.get_location(rauru_random_location).vanilla_item
