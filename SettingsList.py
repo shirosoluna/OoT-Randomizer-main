@@ -3927,8 +3927,8 @@ class SettingInfos:
             (the Light Medallion in the vanilla game) is
             given as a starting item instead.
 
-            'No': Rauru gives reward beyond the Door of Time
-            per vanilla.
+            'No': Rauru gives reward when you go beyond
+            the Door of Time.
 
             'Yes': You begin the game with the reward Rauru
             normally gives beyond the Door of Time. If dungeon
