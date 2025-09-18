@@ -817,10 +817,11 @@ def get_pool_core(world: World) -> tuple[list[str], dict[str, Item]]:
                 if world.settings.skip_reward_from_rauru != 'free_forced':
                     shuffle_item = True
                 else:
-                    possible_reward_locations = ["ToT Reward from Rauru", "Queen Gohma", "King Dodongo", "Barinade", 
-                                                  "Phantom Ganon", "Volvagia", "Morpha", "Bongo Bongo", "Twinrova"]
-                    rauru_random_location: str = random.choice(possible_reward_locations)
-                    item = world.get_location(rauru_random_location).vanilla_item
+                    if world.settings.shuffle_dungeon_rewards in ('any_dungeon', 'overworld', 'regional', 'anywhere'):
+                        possible_reward_locations = ["ToT Reward from Rauru", "Queen Gohma", "King Dodongo", "Barinade", 
+                                                      "Phantom Ganon", "Volvagia", "Morpha", "Bongo Bongo", "Twinrova"]
+                        rauru_random_location: str = random.choice(possible_reward_locations)
+                        item = world.get_location(rauru_random_location).vanilla_item
                     shuffle_item = False
         elif location.type == 'Boss':
             if world.settings.shuffle_dungeon_rewards in ('vanilla', 'reward'):
