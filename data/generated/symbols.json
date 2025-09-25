@@ -36,6 +36,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "address": "034CA1A0",
 =======
         "address": "034C9F20",
@@ -49,6 +50,9 @@
 =======
         "address": "034CA2C0",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034C25E0",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 0
     },
     "AUTO_TRACKER_CONTEXT": {
@@ -376,6 +380,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "address": "034AF628",
         "length": 4
     },
@@ -409,6 +414,13 @@
     "CHEST_SIZE_TEXTURE": {
         "address": "034AF738",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034ADA74",
+        "length": 4
+    },
+    "CHEST_SIZE_TEXTURE": {
+        "address": "034ADA70",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 4
     },
     "CHEST_SKULL_TEXTURE": {
@@ -416,6 +428,7 @@
         "length": 1
     },
     "CHEST_TEXTURE_MATCH_CONTENTS": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -453,6 +466,13 @@
     "COMPLETE_MASK_QUEST": {
         "address": "034C9F60",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034ADA78",
+        "length": 4
+    },
+    "COMPLETE_MASK_QUEST": {
+        "address": "034C2280",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 1
     },
     "COOP_CONTEXT": {
@@ -500,6 +520,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "address": "034A6840",
         "length": 0
     },
@@ -533,6 +554,13 @@
     "DPAD_RESOURCE_END": {
         "address": "034A6ED0",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034A4ED8",
+        "length": 0
+    },
+    "DPAD_RESOURCE_END": {
+        "address": "034A56D8",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 0
     },
     "DUNGEONS_SHUFFLED": {
@@ -560,6 +588,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "address": "034AF620",
 =======
         "address": "034AF3AC",
@@ -573,6 +602,9 @@
 =======
         "address": "034AF734",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034ADA6C",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 4
     },
     "FAST_BUNNY_HOOD_ENABLED": {
@@ -584,6 +616,7 @@
         "length": 1
     },
     "FILENAME_ENCODING": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -601,6 +634,9 @@
 =======
         "address": "034AF148",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034AD480",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 256
     },
     "FIX_BROKEN_DROPS": {
@@ -612,6 +648,7 @@
         "length": 160
     },
     "FONT_CHAR_TEX_HEIGHT": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -681,6 +718,21 @@
     "FONT_RESOURCE_END": {
         "address": "034A8398",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034A4C60",
+        "length": 4
+    },
+    "FONT_CHAR_TEX_WIDTH": {
+        "address": "034A4C64",
+        "length": 4
+    },
+    "FONT_RESOURCE": {
+        "address": "034A56D8",
+        "length": 0
+    },
+    "FONT_RESOURCE_END": {
+        "address": "034A6BA0",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 0
     },
     "FREE_BOMBCHU_DROPS": {
@@ -692,6 +744,7 @@
         "length": 4
     },
     "GANON_BOSS_KEY_CONDITION": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -729,6 +782,13 @@
     "GANON_BOSS_KEY_CONDITION_COUNT": {
         "address": "034CA04C",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034C236E",
+        "length": 1
+    },
+    "GANON_BOSS_KEY_CONDITION_COUNT": {
+        "address": "034C236C",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 2
     },
     "GET_CHEST_OVERRIDE_WRAPPER": {
@@ -784,6 +844,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "address": "034C9F98",
 =======
         "address": "034C9D18",
@@ -797,6 +858,9 @@
 =======
         "address": "034CA0B8",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034C23D8",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 1
     },
     "KEYRING_BOSSKEY_CONDITION": {
@@ -828,6 +892,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "address": "034C9E42",
 =======
         "address": "034C9BC2",
@@ -841,6 +906,9 @@
 =======
         "address": "034C9F62",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034C2282",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 1
     },
     "MOVED_ADULT_KING_ZORA": {
@@ -864,6 +932,7 @@
         "length": 1
     },
     "NO_ESCAPE_SEQUENCE": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -901,6 +970,13 @@
     "NUM_FONT_CHARS": {
         "address": "034A6454",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034ADB32",
+        "length": 1
+    },
+    "NUM_FONT_CHARS": {
+        "address": "034A4C5C",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 4
     },
     "OCARINAS_SHUFFLED": {
@@ -908,6 +984,7 @@
         "length": 1
     },
     "OPEN_KAKARIKO": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -925,6 +1002,9 @@
 =======
         "address": "034C9F61",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034C2281",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 1
     },
     "OUTGOING_ITEM": {
@@ -1008,6 +1088,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "address": "034C9F28",
 =======
         "address": "034C9CA8",
@@ -1021,6 +1102,9 @@
 =======
         "address": "034CA048",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034C2368",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 4
     },
     "RANDO_CONTEXT": {
@@ -1028,6 +1112,7 @@
         "length": 4
     },
     "REQUIRED_PENDING_FRAMES": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1045,6 +1130,9 @@
 =======
         "address": "034A60B0",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034A48B8",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 1
     },
     "REWARDS_AS_ITEMS": {
@@ -1052,6 +1140,7 @@
         "length": 1
     },
     "RNG_SEED_INT": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1069,6 +1158,9 @@
 =======
         "address": "034AF4FC",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034AD834",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 4
     },
     "SET_BONK_FLAG": {
@@ -1152,6 +1244,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         "address": "034AF33C",
 =======
         "address": "034AF1B8",
@@ -1165,6 +1258,9 @@
 =======
         "address": "034AF540",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034AD878",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 4
     },
     "TCG_REQUIRES_LENS": {
@@ -1188,6 +1284,7 @@
         "length": 2
     },
     "TRIFORCE_SPRITE_RESOURCE": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1225,6 +1322,13 @@
     "TRIFORCE_SPRITE_RESOURCE_END": {
         "address": "034A9398",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034A6BA0",
+        "length": 0
+    },
+    "TRIFORCE_SPRITE_RESOURCE_END": {
+        "address": "034A7BA0",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 0
     },
     "TWINROVA_ACTION_TIMER": {
@@ -1252,6 +1356,7 @@
         "length": 16
     },
     "a_button": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1445,6 +1550,105 @@
     },
     "bk_display": {
         "address": "034AF69E",
+=======
+        "address": "034A9AF0",
+        "length": 4
+    },
+    "a_note_b": {
+        "address": "034A9ADC",
+        "length": 4
+    },
+    "a_note_font_glow_base": {
+        "address": "034A9AC4",
+        "length": 4
+    },
+    "a_note_font_glow_max": {
+        "address": "034A9AC0",
+        "length": 4
+    },
+    "a_note_g": {
+        "address": "034A9AE0",
+        "length": 4
+    },
+    "a_note_glow_base": {
+        "address": "034A9ACC",
+        "length": 4
+    },
+    "a_note_glow_max": {
+        "address": "034A9AC8",
+        "length": 4
+    },
+    "a_note_r": {
+        "address": "034A9AE4",
+        "length": 4
+    },
+    "active_item_action_id": {
+        "address": "034AF8AC",
+        "length": 4
+    },
+    "active_item_fast_chest": {
+        "address": "034AF89C",
+        "length": 4
+    },
+    "active_item_graphic_id": {
+        "address": "034AF8A0",
+        "length": 4
+    },
+    "active_item_object_id": {
+        "address": "034AF8A4",
+        "length": 4
+    },
+    "active_item_row": {
+        "address": "034AF8B0",
+        "length": 4
+    },
+    "active_item_text_id": {
+        "address": "034AF8A8",
+        "length": 4
+    },
+    "active_override": {
+        "address": "034AF8B8",
+        "length": 16
+    },
+    "active_override_is_outgoing": {
+        "address": "034AF8B4",
+        "length": 4
+    },
+    "actor_categories": {
+        "address": "034A7C04",
+        "length": 192
+    },
+    "adultSkeleton": {
+        "address": "034AD67C",
+        "length": 252
+    },
+    "adult_safe": {
+        "address": "034C228E",
+        "length": 1
+    },
+    "alt_overrides": {
+        "address": "034ADCD8",
+        "length": 3200
+    },
+    "b_button": {
+        "address": "034A9AEC",
+        "length": 4
+    },
+    "beating_dd": {
+        "address": "034A9AF8",
+        "length": 4
+    },
+    "beating_no_dd": {
+        "address": "034A9B00",
+        "length": 4
+    },
+    "bgm_sequence_ids": {
+        "address": "034AD778",
+        "length": 188
+    },
+    "bk_display": {
+        "address": "034ADAE8",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 1
     },
     "boss_display": {
@@ -1456,6 +1660,7 @@
         "length": 108
     },
     "bosses_warps": {
+<<<<<<< HEAD
         "address": "034A9A54",
         "length": 340
     },
@@ -1621,9 +1826,177 @@
     },
     "font_sprite": {
         "address": "034AB460",
+=======
+        "address": "034A80E4",
+        "length": 340
+    },
+    "botw_rooms": {
+        "address": "034A8A28",
+        "length": 156
+    },
+    "buffer_password": {
+        "address": "034ADB28",
+        "length": 6
+    },
+    "buttons_sprite": {
+        "address": "034A9980",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
+        "length": 16
+    },
+    "c_button": {
+        "address": "034A9AE8",
+        "length": 4
+    },
+    "c_note_b": {
+        "address": "034A9AD0",
+        "length": 4
+    },
+    "c_note_font_glow_base": {
+        "address": "034A9AB4",
+        "length": 4
+    },
+    "c_note_font_glow_max": {
+        "address": "034A9AB0",
+        "length": 4
+    },
+    "c_note_g": {
+        "address": "034A9AD4",
+        "length": 4
+    },
+    "c_note_glow_base": {
+        "address": "034A9ABC",
+        "length": 4
+    },
+    "c_note_glow_max": {
+        "address": "034A9AB8",
+        "length": 4
+    },
+    "c_note_r": {
+        "address": "034A9AD8",
+        "length": 4
+    },
+    "cfg_item_overrides": {
+        "address": "034AF8E0",
+        "length": 35200
+    },
+    "childSkeleton": {
+        "address": "034AD580",
+        "length": 252
+    },
+    "child_safe": {
+        "address": "034C228D",
+        "length": 1
+    },
+    "collectible_mutex": {
+        "address": "034ADC48",
+        "length": 4
+    },
+    "collectible_override": {
+        "address": "034ADC38",
+        "length": 16
+    },
+    "collectible_override_flags": {
+        "address": "034ADCD0",
+        "length": 4
+    },
+    "cooldown": {
+        "address": "034ADB2E",
+        "length": 2
+    },
+    "curr_drawn_actor": {
+        "address": "034C2294",
+        "length": 4
+    },
+    "curr_scene_setup": {
+        "address": "034C23C8",
+        "length": 1
+    },
+    "dc_rooms": {
+        "address": "034A91E0",
+        "length": 208
+    },
+    "debug_text_color": {
+        "address": "034A9648",
+        "length": 3
+    },
+    "debug_text_height": {
+        "address": "034A46C0",
+        "length": 1
+    },
+    "debug_text_width": {
+        "address": "034A46C1",
+        "length": 1
+    },
+    "defaultDDHeart": {
+        "address": "034A492C",
+        "length": 6
+    },
+    "defaultHeart": {
+        "address": "034A4934",
+        "length": 6
+    },
+    "deku_rooms": {
+        "address": "034A92B0",
+        "length": 312
+    },
+    "dpad_sprite": {
+        "address": "034A9A10",
+        "length": 16
+    },
+    "drop_collectible_override_flag": {
+        "address": "034AF8CC",
+        "length": 8
+    },
+    "dummy_actor": {
+        "address": "034AF8D4",
+        "length": 4
+    },
+    "dungeon_count": {
+        "address": "034A97A4",
+        "length": 4
+    },
+    "dungeon_rooms": {
+        "address": "034A8548",
+        "length": 104
+    },
+    "dungeon_warps": {
+        "address": "034A93E8",
+        "length": 442
+    },
+    "dungeons": {
+        "address": "034A9670",
+        "length": 308
+    },
+    "empty_dlist": {
+        "address": "034A9A70",
+        "length": 8
+    },
+    "extended_savectx": {
+        "address": "034C2370",
+        "length": 88
+    },
+    "extern_ctxt": {
+        "address": "034A97D4",
+        "length": 20
+    },
+    "fire_rooms": {
+        "address": "034A8EA0",
+        "length": 364
+    },
+    "flag_categories": {
+        "address": "034A7BA4",
+        "length": 96
+    },
+    "float_precision": {
+        "address": "034A9645",
+        "length": 1
+    },
+    "font_sprite": {
+        "address": "034A9A20",
         "length": 16
     },
     "forest_rooms": {
+<<<<<<< HEAD
         "address": "034AA9E4",
         "length": 312
     },
@@ -2845,9 +3218,269 @@
     },
     "stones_sprite": {
         "address": "034AB4A0",
+=======
+        "address": "034A900C",
+        "length": 312
+    },
+    "freecam_modes": {
+        "address": "034A4760",
+        "length": 66
+    },
+    "ganon_rooms": {
+        "address": "034A85B0",
+        "length": 364
+    },
+    "gtg_rooms": {
+        "address": "034A871C",
+        "length": 312
+    },
+    "hash_sprites": {
+        "address": "034A9954",
+        "length": 8
+    },
+    "hash_symbols": {
+        "address": "034A9914",
+        "length": 64
+    },
+    "heap_next": {
+        "address": "034C23D4",
+        "length": 4
+    },
+    "heart_sprite": {
+        "address": "034A99A0",
+        "length": 16
+    },
+    "hideout_rooms": {
+        "address": "034A8854",
+        "length": 208
+    },
+    "ice_rooms": {
+        "address": "034A8924",
+        "length": 260
+    },
+    "icon_sprites": {
+        "address": "034A4830",
+        "length": 12
+    },
+    "illegal_model": {
+        "address": "034C2290",
+        "length": 2
+    },
+    "incoming_junk": {
+        "address": "034AF898",
+        "length": 2
+    },
+    "input_icon_height": {
+        "address": "034A4946",
+        "length": 1
+    },
+    "input_icon_width": {
+        "address": "034A4947",
+        "length": 1
+    },
+    "input_number_height": {
+        "address": "034A4944",
+        "length": 1
+    },
+    "input_number_width": {
+        "address": "034A4945",
+        "length": 1
+    },
+    "item_digit_sprite": {
+        "address": "034A99C0",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
+        "length": 16
+    },
+    "item_draw_table": {
+        "address": "034A9B04",
+        "length": 5904
+    },
+    "item_overrides_count": {
+        "address": "034AF8D8",
+        "length": 4
+    },
+    "item_table": {
+        "address": "034AB340",
+        "length": 8512
+    },
+    "items": {
+        "address": "034A9964",
+        "length": 21
+    },
+    "items_debug": {
+        "address": "034A7CC4",
+        "length": 1054
+    },
+    "items_sprite": {
+        "address": "034A9A40",
+        "length": 16
+    },
+    "jabu_rooms": {
+        "address": "034A9144",
+        "length": 156
+    },
+    "key_counts": {
+        "address": "034AB31C",
+        "length": 34
+    },
+    "key_rupee_clock_sprite": {
+        "address": "034A99E0",
+        "length": 16
+    },
+    "last_fog_distance": {
+        "address": "034A97E8",
+        "length": 4
+    },
+    "left_alignment": {
+        "address": "034A4942",
+        "length": 2
+    },
+    "linkhead_skull_sprite": {
+        "address": "034A99B0",
+        "length": 16
+    },
+    "loaded_room_bit_offset": {
+        "address": "034A995C",
+        "length": 2
+    },
+    "loaded_scene_room_setup": {
+        "address": "034A9960",
+        "length": 4
+    },
+    "medals": {
+        "address": "034A9658",
+        "length": 24
+    },
+    "medals_sprite": {
+        "address": "034A9A50",
+        "length": 16
+    },
+    "menu_categories": {
+        "address": "034A95A4",
+        "length": 160
+    },
+    "menu_cooldown": {
+        "address": "034A9644",
+        "length": 1
+    },
+    "missing_dlist": {
+        "address": "034C228C",
+        "length": 1
+    },
+    "normal_dd": {
+        "address": "034A9AF4",
+        "length": 4
+    },
+    "normal_no_dd": {
+        "address": "034A9AFC",
+        "length": 4
+    },
+    "num_override_flags": {
+        "address": "034ADCD4",
+        "length": 2
+    },
+    "num_to_bits": {
+        "address": "034AD838",
+        "length": 64
+    },
+    "object_slots": {
+        "address": "034C2298",
+        "length": 192
+    },
+    "ocarina_button_sprite": {
+        "address": "034A9990",
+        "length": 16
+    },
+    "outgoing_queue": {
+        "address": "034ADC50",
+        "length": 128
+    },
+    "overworld_warps": {
+        "address": "034A8238",
+        "length": 782
+    },
+    "password_index": {
+        "address": "034A9910",
+        "length": 1
+    },
+    "quest_items_sprite": {
+        "address": "034A9A30",
+        "length": 16
+    },
+    "randoGfxPoolIndex": {
+        "address": "034B8260",
+        "length": 1
+    },
+    "randoGfxPools": {
+        "address": "034B8268",
+        "length": 40960
+    },
+    "rando_overlay_db": {
+        "address": "034C2270",
+        "length": 16
+    },
+    "reward_rows": {
+        "address": "034A964C",
+        "length": 9
+    },
+    "room_flags": {
+        "address": "034ADB38",
+        "length": 256
+    },
+    "rupee_colors": {
+        "address": "034A4920",
+        "length": 12
+    },
+    "rupee_digit_sprite": {
+        "address": "034A99D0",
+        "length": 16
+    },
+    "satisfied_pending_frames": {
+        "address": "034AF896",
+        "length": 1
+    },
+    "scene_fog_distance": {
+        "address": "034A97EC",
+        "length": 4
+    },
+    "setup_db": {
+        "address": "034A9A78",
+        "length": 40
+    },
+    "shadow_rooms": {
+        "address": "034A8BFC",
+        "length": 364
+    },
+    "shooting_gallery_show_message": {
+        "address": "034C2284",
+        "length": 1
+    },
+    "show_clock": {
+        "address": "034ADA7C",
+        "length": 1
+    },
+    "silver_rupee_vars": {
+        "address": "034AB214",
+        "length": 264
+    },
+    "song_note_sprite": {
+        "address": "034A99F0",
+        "length": 16
+    },
+    "spawn_actor_with_flag": {
+        "address": "034AF8C8",
+        "length": 4
+    },
+    "spirit_rooms": {
+        "address": "034A8AC4",
+        "length": 312
+    },
+    "stones_sprite": {
+        "address": "034A9A60",
         "length": 16
     },
     "tentatives": {
+<<<<<<< HEAD
         "address": "034AF6E8",
         "length": 2
     },
@@ -2897,6 +3530,57 @@
     },
     "water_rooms": {
         "address": "034AA740",
+=======
+        "address": "034ADB30",
+        "length": 2
+    },
+    "text_cursor_border_base": {
+        "address": "034A9AA4",
+        "length": 4
+    },
+    "text_cursor_border_max": {
+        "address": "034A9AA0",
+        "length": 4
+    },
+    "text_cursor_inner_base": {
+        "address": "034A9AAC",
+        "length": 4
+    },
+    "text_cursor_inner_max": {
+        "address": "034A9AA8",
+        "length": 4
+    },
+    "text_height": {
+        "address": "034A4AA8",
+        "length": 4
+    },
+    "text_width": {
+        "address": "034A4AAC",
+        "length": 4
+    },
+    "texture_table": {
+        "address": "034AD87C",
+        "length": 496
+    },
+    "top_alignment": {
+        "address": "034A4940",
+        "length": 2
+    },
+    "trade_quest_items": {
+        "address": "034A4C70",
+        "length": 616
+    },
+    "treasure_chest_game_show_message": {
+        "address": "034C2283",
+        "length": 1
+    },
+    "triforce_sprite": {
+        "address": "034A9A00",
+        "length": 16
+    },
+    "water_rooms": {
+        "address": "034A8D68",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 312
     },
     "world_display": {
@@ -2904,6 +3588,7 @@
         "length": 1
     },
     "xflag_room_blob": {
+<<<<<<< HEAD
         "address": "034B0510",
         "length": 3000
     },
@@ -3697,6 +4382,17 @@
     "xflag_scene_table": {
         "address": "034B14AC",
 >>>>>>> 1aeeb027 (Debug menu v3)
+=======
+        "address": "034AE958",
+        "length": 3000
+    },
+    "xflag_room_table": {
+        "address": "034AF510",
+        "length": 700
+    },
+    "xflag_scene_table": {
+        "address": "034AF7CC",
+>>>>>>> 7fd3c8df (Fix for when TCG keys are vanilla but unique key models is enabled the keys seen by the LoT are incorrectly rendered as generic small keys. [#2464])
         "length": 202
     }
 }
