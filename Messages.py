@@ -819,7 +819,9 @@ class Message:
         instant_text_code = TextCode(0x08, 0)
 
         # # speed the text
-        if speed_up_text:
+        if (speed_up_text
+                and self.id != 0x4078  # long recording scarecrow message after playback
+        ):
             text_codes.append(instant_text_code) # allow instant
 
         # write the message
