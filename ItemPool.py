@@ -6,6 +6,7 @@ from decimal import Decimal, ROUND_UP
 from typing import TYPE_CHECKING, Optional
 
 from Item import Item, ItemInfo, ItemFactory
+from ItemList import REWARD_COLORS
 from Location import DisableType
 <<<<<<< HEAD
 import StartingItems
@@ -1053,6 +1054,8 @@ def get_pool_core(world: World) -> tuple[list[str], dict[str, Item]]:
         pool.extend(get_junk_item())
     add_random_starting_items_ammo(world.randomized_starting_items)
     for item, count in world.randomized_starting_items.items():
+        if item in REWARD_COLORS and count > 0:
+            world.hinted_dungeon_reward_locations[item] = None
         item = ItemFactory(item, world)
         for _ in range(count):
             if item.solver_id is not None:
