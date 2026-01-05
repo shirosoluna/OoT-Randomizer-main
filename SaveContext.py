@@ -288,7 +288,7 @@ class SaveContext:
 
         self.addresses['health_capacity'].value       = int(health) * 0x10
         self.addresses['health'].value                = int(health) * 0x10
-        self.addresses['quest']['heart_pieces'].value = int((health % 1) * 4) * 0x10
+        self.addresses['quest']['heart_pieces'].value = int((health % 1) * 4)
 
     def give_item(self, world: World, item: str, count: int = 1) -> None:
         if item.endswith(')'):
@@ -689,7 +689,7 @@ class SaveContext:
                 'stone_of_agony'         : Address(0x00A4, mask=0x00200000),
                 'gerudos_card'           : Address(0x00A4, mask=0x00400000),
                 'gold_skulltula'         : Address(0x00A4, mask=0x00800000),
-                'heart_pieces'           : Address(0x00A4, mask=0xFF000000),
+                'heart_pieces'           : Address(0x00A4, mask=0xF0000000),
             },
 
             # Dungeon Items
