@@ -5,6 +5,7 @@
     "GLOBAL_CONTEXT": 2149352608,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "PAYLOAD_END": 2152282672,
 =======
     "PAYLOAD_END": 2152282032,
@@ -12,6 +13,9 @@
 =======
     "PAYLOAD_END": 2152282672,
 >>>>>>> acf5c683 (adjust pause menu info)
+=======
+    "PAYLOAD_END": 2152280784,
+>>>>>>> 9d168cf1 (Port 1.1/1.2 scarecrow vibrato fix)
     "PLAYER_ACTOR": 2149427760,
     "PLAYER_WALK_RUN": 2151254976,
     "SAVE_CONTEXT": 2148640208,
