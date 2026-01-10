@@ -4,10 +4,14 @@
     "GET_ITEMTABLE": 2151325310,
     "GLOBAL_CONTEXT": 2149352608,
 <<<<<<< HEAD
+<<<<<<< HEAD
     "PAYLOAD_END": 2152282672,
 =======
     "PAYLOAD_END": 2152282032,
 >>>>>>> 41fc2348 (add tower to dungeon_entry_t)
+=======
+    "PAYLOAD_END": 2152282672,
+>>>>>>> acf5c683 (adjust pause menu info)
     "PLAYER_ACTOR": 2149427760,
     "PLAYER_WALK_RUN": 2151254976,
     "SAVE_CONTEXT": 2148640208,
