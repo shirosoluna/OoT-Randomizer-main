@@ -11,14 +11,14 @@ RespawnByScene respawnsByScene[] = {
     { 0x328, { { -109, 11, -9 }, -29131 }},         // Lake Hylia to Zora Domain
     { 0x560, { { -912, -1326, 3391 }, 0 }},         // Zora Domain to Lake Hylia
     { 0x10E, { { -1500, 150, 1600 }, 32768}},       // Sapphire cutscene to Zora Fountain
-    { 0x1A5, { { -224, -51, -117 }, 16384}},       // Caught by Gerudos as child
+    { 0x1A5, { { -224, -51, -117 }, 16384}},        // Caught by Gerudos as child
+    { 0x199, { { 4129, 920, -1384 }, 49152}},       // Zora River from top of waterfall
 };
 
 void set_new_respawn() {
-
-    uint8_t newRespawnTrue = 0;
+    bool newRespawnTrue = false;
     int32_t currentEntranceIndex = z64_game.entrance_index;
-    for (uint8_t i = 0; i < 11; i++) {
+    for (uint8_t i = 0; i < 12; i++) {
         // Ensure we always respawn at a safe location.
         if (currentEntranceIndex == respawnsByScene[i].scene_index) {
             z64_Play_SetupRespawnPoint(&z64_game, 0x01, 0xDFF);
@@ -26,7 +26,7 @@ void set_new_respawn() {
             z64_file.respawn[RESPAWN_MODE_RETURN].yaw = respawnsByScene[i].respawnInfo.yaw;
             z64_file.respawn_flag = 2;
             z64_game.scene_load_flag = 0x14;
-            newRespawnTrue = 1;
+            newRespawnTrue = true;
             break;
         }
     }
@@ -42,7 +42,18 @@ void set_new_respawn() {
         return;
     }
 
-    if (newRespawnTrue == 0) {
+    // Bottom of the Well respawn in the main room, mostly for advanced/no logic to avoid having to do the difficult glitch at the start if you fall into water.
+    if (z64_game.scene_index == 8) {
+        z64_Play_SetupRespawnPoint(&z64_game, 0x01, 0xDFF);
+        z64_xyzf_t botwPos = { 0, -12, 117 };
+        z64_file.respawn[RESPAWN_MODE_RETURN].pos = botwPos;
+        z64_file.respawn[RESPAWN_MODE_RETURN].yaw = 32768;
+        z64_file.respawn_flag = 2;
+        z64_game.scene_load_flag = 0x14;
+        return;
+    }
+
+    if (newRespawnTrue) {
         z64_game.entrance_index = z64_file.entrance_index;
         z64_game.fadeout_transition = 0x02;
         z64_file.respawn_flag = -2;
@@ -51,7 +62,6 @@ void set_new_respawn() {
 }
 
 void manage_swim() {
-
     // We found the first scale.
     if (extended_savectx.extended_scale > 0) {
         return;
