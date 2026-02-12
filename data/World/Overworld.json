@@ -397,7 +397,7 @@
         "locations": {
             # This is the third rupee from the shortcut entrance and is automatically
             # collected upon entering through the shortcut. Only really matters for overworld ER.
-            "LW Underwater Shortcut Green Rupee": "is_child"
+            "LW Underwater Shortcut Green Rupee": "is_child and can_swim"
         },
         "exits": {
             "Lost Woods": "True"
@@ -522,7 +522,7 @@
         },
         "locations": {
             "Pierre": "is_adult and Bonooru and scarecrow_behavior != 'free'",
-            "LH Sun": "(can_use(Distant_Scarecrow) or 'Water Temple Clear') and can_use(Bow)",
+            "LH Sun": "can_use(Distant_Scarecrow) or ('Water Temple Clear' and can_swim) and can_use(Bow)",
             "LH Freestanding PoH": "
                 is_adult and (can_use(Scarecrow) or here(can_plant_bean))",
             "LH Underwater Item": "is_child and can_dive",
@@ -617,7 +617,8 @@
         "hint": "GERUDO_VALLEY",
         "time_passes": true,
         "locations": {
-            "GV Adult Upper Waterfall Wonderitem": "is_adult",
+            "GV Adult Upper Waterfall Wonderitem": "is_adult and here(can_plant_bean) or can_swim or
+            (can_use(Iron_Boots) and can_use(Hookshot))",
             "GV Adult Lower Waterfall Wonderitem": "is_adult",
             "GV GS Small Bridge": "can_use(Boomerang) and at_night",
             "Bug Rock": "is_child and has_bottle"
@@ -2612,7 +2613,7 @@
                     Prescription or ('Prescription Access' and not adult_trade_shuffle))"
         },
         "locations": {
-            "ZD Diving Minigame": "is_child",
+            "ZD Diving Minigame": "is_child and can_swim",
             "ZD Chest": "can_use(Sticks)",
             "Deliver Rutos Letter": "
                 is_child and Rutos_Letter and zora_fountain != 'open'",

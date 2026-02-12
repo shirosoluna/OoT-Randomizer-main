@@ -4,10 +4,14 @@
     "GET_ITEMTABLE": 2151325310,
     "GLOBAL_CONTEXT": 2149352608,
 <<<<<<< HEAD
+<<<<<<< HEAD
     "PAYLOAD_END": 2152281696,
 =======
     "PAYLOAD_END": 2152282528,
 >>>>>>> f7a2f0025 (Update to main dev and address reviews)
+=======
+    "PAYLOAD_END": 2152282528,
+>>>>>>> origin/bronze_scale
     "PLAYER_ACTOR": 2149427760,
     "PLAYER_WALK_RUN": 2151254976,
     "SAVE_CONTEXT": 2148640208,
