@@ -61,7 +61,7 @@
         "dungeon": "Deku Tree",
         "exits":
         {
-            "Deku Tree Basement Torch Room": "can_swim or can_use(Iron_boots)"
+            "Deku Tree Basement Torch Room": "can_swim or can_use(Iron_Boots)"
         }
     },
     {
@@ -98,8 +98,10 @@
             "Deku Tree Basement": "True",
             "Deku Tree Basement Back Room": "is_child",
             "Deku Tree Before Boss": "
-                can_swim and (deku_tree_shortcuts or
-                here(has_fire_source_with_torch or (logic_deku_b1_webs_with_bow and can_use(Bow)) or can_gdv))"
+                (can_swim or can_use(Iron_Boots)) and (
+                deku_tree_shortcuts or
+                here(has_fire_source_with_torch or (logic_deku_b1_webs_with_bow and can_use(Bow)) or can_gdv)
+                )"
         }
     },
     {
