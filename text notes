@@ -1,0 +1,17 @@
+NTSC 1.0	00F86000	00FBD800	37800
+object-link_boy
+
+0x000000000602b168                gLinkAdultHookshotTipVtx = 006FB1168
+0x000000000602b288                gLinkAdultHookshotTipDL =  006FB1288
+
+0x000000000602b338                gLinkAdultHookshotChainTex = 006FB1338
+0x000000000602ae70                gLinkAdultHookshotChainVtx = 006FB0E70
+0x000000000602aff0                gLinkAdultHookshotChainDL  = 006FB0FF0
+
+0x000000000602bb18                gLinkAdultHookshotReticleTex = 006FB1B18
+0x000000000602cb18                gLinkAdultHookshotReticleVtx = 006FB2B18
+0x000000000602cb48                gLinkAdultHookshotReticleDL = 006FB2B48
+
+0x00000000809106e0       0xe0 build/ntsc-1.0/src/overlays/actors/ovl_Arms_Hook/z_arms_hook.o
+0x00000000809106e0                Arms_Hook_Profile
+0x00000000809107c0                . = ALIGN (0x10)

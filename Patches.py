@@ -122,6 +122,12 @@ def patch_rom(spoiler: Spoiler, world: World, rom: Rom) -> Rom:
             (0x05CC, [0xFF, 0xFF, 0xFF]), # Outer Primary Color?
             (0x05D4, [0xFF, 0xFF, 0xFF]), # Outer Env Color?
         )),
+        ('object_NewHookshot', 0x01914000, 0x01914800, 0x1B6, ( # hookshot -> full hookshot
+            (0x052C, [0xAA, 0xAA, 0xAA]), # 
+            (0x0534, [0x5A, 0x5A, 0x5A]), # 
+            (0x05CC, [0xFF, 0xFF, 0xFF]), # 
+            (0x05D4, [0xFF, 0xFF, 0xFF]), # 
+        )),
     )
 
     # Add the new models to the extended object file.
